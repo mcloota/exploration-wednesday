@@ -1,3 +1,7 @@
+html {
+  font-family: sans-serif;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 150px auto 150px;
@@ -6,6 +10,7 @@
 
 header, footer {
   grid-column: 1 / 4;
+  font-family: 'TrumpGothicEastRegular', Helvetica, Arial, "Trebuchet MS", Tahoma, Arial, sans-serif;
 }
 
 @media all and (max-width: 700px) {
@@ -26,9 +31,32 @@ header,
 aside,
 article,
 footer {
-  background: #eaeaea;
+  background: rgba(86, 248, 248, 0.4);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 25vh;
+  height: 30vh;
+}
+
+.topnav {
+  float:left;
+  background-color: lightgray;
+  opacity: 1;
+  height:12em;
+  width:100%;
+}
+
+nav > ul > li {
+  width:8em;
+  float: left;
+  height: 8em;
+  border-radius: 50%;
+  background-color:blueviolet;
+  list-style: none;
+  align-content: center;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  font-weight: 900;
+  color: azure;
+  font-size: 1.4em;
 }
